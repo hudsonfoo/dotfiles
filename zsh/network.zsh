@@ -49,3 +49,11 @@ portscan() {
         scan_subnet $subnet $port | grep -E -v $addrs[$iface]
     done
 }
+
+findport() {
+  lsof -nP -i4TCP:$1 | grep LISTEN
+}
+
+killport() {
+  kill $(findport 3000 | awk '{print $2}') 
+}
