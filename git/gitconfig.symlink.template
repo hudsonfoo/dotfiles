@@ -6,8 +6,8 @@
     path = ~/.gitconfig_linux
 <% end %>
 [user]
-    name = Marshall Culpepper
-    email = marshall.law@gmail.com
+    name = David Hudson
+    email = im@davidhudson.me
 [core]
     excludesfile = ~/.gitignore
 [color]
@@ -31,4 +31,4 @@
 [push]
     default = upstream
 [credential "https://github.com"]
-    username = marshall
+    username = hudsonfoo
